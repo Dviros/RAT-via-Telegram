@@ -1,24 +1,20 @@
 # RAT-via-Telegram
+## Dviros's notes:
+Windows Remote Post Breach Tool via Telegram (Python 2.7),
+Originally created by <a href="http://github.com/Ritiek">Ritiek</a>, Forked and modified by <a href="http://github.com/mvrozanti">mvrozanti</a> and then myself.
 
-Windows Remote Administration Tool via Telegram (Python 2.7) | Originally created by <a href="http://github.com/Ritiek">Ritiek</a>, Forked and modified by <a href="http://github.com/mvrozanti">mvrozanti</a>
+The whole purpose of this tool is to demonstrate (as a "PoC") the control of an already breached machine, via Telegram.
+As the same with my already written tools, I do not promote illegal activities.
 
 This modified version uses Telegram bot API v2, instead of the traditional v1. The main change is keyboard buttons instead of text typing.
-I will try to add new features.
+I will try to add new features, close bugs and be compatible to the API v3, after adding the needed changes from "mvrozanti".
 In the meanwhile, cd, download, upload, run and delete commands will not work.
 
-### Why another one?
 
-- The current Remote Administration Tools in the market face 2 major problems:
+## Donations will be highly appreciated
+![Monero Donation](https://i.imgur.com/AMK3OCh.png)
 
-    - Lack of encryption.
-    - Require port forwarding in order to control from hundreds of miles.
-
-- This RAT overcomes both these issues by using the Telegram bot API.
-
-    - Fully encrypted. The data being exchanged cannot be spied upon using MITM tools.
-    - Telegram messenger app provides a simple way to communicate to the target without configuring port forward before hand on the target.
-
-## Features:
+### Currently Working Features:
 
 - Run keylogger on the target
 - Get target PC's Windows version, processor and more
@@ -49,6 +45,22 @@ In the meanwhile, cd, download, upload, run and delete commands will not work.
 - [WIP] Copy and Move files on the target
 - [WIP] Audio compression
 - More coming soon!
+
+
+
+## Ritiek's legacy notes:
+### Why another one?
+
+- The current Remote Administration Tools in the market face 2 major problems:
+
+    - Lack of encryption.
+    - Require port forwarding in order to control from hundreds of miles.
+
+- This RAT overcomes both these issues by using the Telegram bot API.
+
+    - Fully encrypted. The data being exchanged cannot be spied upon using MITM tools.
+    - Telegram messenger app provides a simple way to communicate to the target without configuring port forward before hand on the target.
+
 
 ## Screenshots:
 
@@ -85,18 +97,7 @@ In the meanwhile, cd, download, upload, run and delete commands will not work.
 - You can also modify the name of hidden `.exe` file and location & name of the folder where the hidden `.exe` will hide itself. To do this; modify `compiled_name` and `hide_folder` respectively.
 - Assign your known chat ids to beginning of RATAttack.py
 
-## Notes:
 
-- Currently only Python2 is supported. Python3 support will be added soon!
-
-## Contributing:
-
-- This project is still in very early stages, so you can expect some bugs. Please feel free to report them! Even better, send a pull request :)
-- Any new features and ideas are most welcome! Please do submit feature requests by creating Issues
-
-## Disclaimer:
-
-**This tool is supposed to be used only on authorized systems. Any unauthorized use of this tool without explicit permission is illegal.**
 
 ## License:
 
